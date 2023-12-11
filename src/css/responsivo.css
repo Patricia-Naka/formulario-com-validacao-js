@@ -1,0 +1,55 @@
+@media(max-width: 975px){
+     
+     .container { 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 450px;
+          height: 1024px;
+         
+
+}
+
+.container .informacoes {
+     margin: 38px;
+     align-items: center;
+     justify-content: center;
+     
+}
+
+.container .informacoes .titulo {
+     font-size: 15px;
+     text-align: center;
+     justify-content: center;
+}
+.container .formulario {
+     height: 70vh;
+     border-radius: 5px;
+}
+.container .informacoes .paragrafo {
+     max-width: 300px;
+     height: 90px;
+     font-size: 14px;
+     text-align: center;
+
+}
+}
+
+@media(max-width: 475px){
+     .container {
+          width:90vw;
+          padding: 0 15px 20px;
+
+     }
+   
+     .formulario{
+          max-width:250px;
+          /* max-height: 45vh; */
+          margin: 25px 0 20px;
+     }
+     .formulario .input, .btn{
+          max-width: 200px;
+     }
+}
+     

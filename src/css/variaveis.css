@@ -1,0 +1,20 @@
+:root {
+     --fonte: 'Roboto';
+     --cor-da-fonte: #ffffff;
+     --cor-paragrafo-formulario: #000000;
+     --cor-da-fonte-btn: #ffffff;
+     --cor-bg-body: #e5e5e5;
+     }
+
+
+:root {
+     --bg-container-formulario:  #ffffff;
+     --bg-botao-formulario:  #3CCC87;
+     --bg-botao-hover: #3CCC70;
+}
+
+:root {
+     --borda-campo-vazio:#F52E2E;
+     --borda-campo-preenchido: #00C22B;
+     --cor-erro-validacao: #F52E2E;
+}

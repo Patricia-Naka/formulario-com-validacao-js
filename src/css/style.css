@@ -1,0 +1,148 @@
+html {
+     font-family: var(--fonte);
+}
+
+body {
+     display: flex;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--cor-bg-body);
+}
+
+.container {
+     display: flex;
+     max-width: 800px;
+     width:100%;
+     height: 500px;
+     align-items: center;
+     justify-content: center;
+     padding: 12px 50px;
+     background-image: url(/src/imagens/background.png);
+     background-size: contain;
+
+
+
+}
+
+.container .informacoes {
+     display: flex;
+     flex-direction: column;
+     margin: 0 50px 0 0;
+     width: 287.25px;
+     height: 46px;
+     margin-top: -117px;
+     color: var(--cor-da-fonte);
+}
+
+.container .informacoes .titulo {
+     display: flex;
+     padding-bottom: 60px;
+     width: 287.25px;
+     font-size: 20px;
+     font-weight: 900;
+     line-height: 23px;
+     text-align: left;
+     height: 46px;
+
+}
+
+.container .informacoes .paragrafo {
+     max-width: 278.25px;
+     height: 54px;
+     font-size: 15px;
+     font-weight: 400;
+     width: 300px;
+     text-align: left;
+}
+
+.formulario {
+     display: flex;
+     flex-direction: column;
+     max-width: 350px;
+     height: 378px;
+     background-color: var(--bg-container-formulario);
+     padding: 20px;
+     border: 1px;
+     font-weight: 700;
+}
+
+.paragrafo-formulario {
+     color: var(--cor-paragrafo-formulario);
+     width: 145px;
+     height: 18px;
+     top: 460px;
+     left: 14px;
+     font-size: 15px;
+     font-weight: 400;
+}
+
+.formulario .input {
+     padding: 5px;
+     font-size: 15px;
+     margin-top: 10px;
+
+}
+
+
+.formulario .input .btn {
+     width: 298px;
+     height: 35.1px;
+     border-radius: 6px;
+     border: 1px;
+}
+
+
+.formulario .input.erro-validacao {
+     border: 2px solid var(--borda-campo-vazio);
+}
+
+.formulario .input.campo-preenchido {
+     border: 2px solid var(--borda-campo-preenchido);
+
+}
+
+.formulario textarea {
+     height: 100px;
+     border-radius: 6px;
+     border: 1px solid;
+     font-size: 17px;
+     padding: 8px;
+}
+
+.formulario .span{
+     font-size: 8px;
+     margin: 0 0 5;
+     visibility: hidden;
+}
+
+.formulario .span.erro-validacao{
+     color: var(--cor-erro-validacao);
+     visibility: visible;
+     
+}
+
+.formulario .paragrafo-formulario {
+     font-size: 15px;
+     margin: 0 0 20px;
+}
+
+.formulario .btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 15px;
+     width: 298px;
+     height: 41px;
+     background-color: var(--bg-botao-formulario);
+     border-radius: 5px;
+     color: var(--cor-da-fonte-btn);
+     cursor: pointer;
+
+}
+
+.formulario .btn:hover{
+      transition: .3s ease-in-out;
+     background-color: var( --bg-botao-hover);
+
+}

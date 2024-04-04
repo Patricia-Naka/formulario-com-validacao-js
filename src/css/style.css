@@ -19,7 +19,7 @@ body {
      align-items: center;
      justify-content: center;
      padding: 12px 50px;
-     background-image: url(/src/imagens/background.png);
+     background-image: url(./src/imagens/background.png);
      background-size: contain;
      margin: auto 0;
 }

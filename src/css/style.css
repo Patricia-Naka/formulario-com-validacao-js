@@ -4,7 +4,9 @@ html {
 
 body {
      display: flex;
+     width: 100%;
      height: 100vh;
+     display: flex;
      align-items: center;
      justify-content: center;
      background-color: var(--cor-bg-body);
@@ -12,34 +14,30 @@ body {
 
 .container {
      display: flex;
-     max-width: 800px;
-     width:100%;
-     height: 500px;
+     max-width: 80%;
+     max-height: 100vh;
      align-items: center;
      justify-content: center;
      padding: 12px 50px;
      background-image: url(/src/imagens/background.png);
      background-size: contain;
-
-
-
+     margin: auto 0;
 }
 
 .container .informacoes {
      display: flex;
      flex-direction: column;
      margin: 0 50px 0 0;
-     width: 287.25px;
-     height: 46px;
-     margin-top: -117px;
+     width: 50%;
+     height: 50%;
      color: var(--cor-da-fonte);
 }
 
-.container .informacoes .titulo {
+.container .informacoes .titulo   {
      display: flex;
      padding-bottom: 60px;
      width: 287.25px;
-     font-size: 20px;
+     font-size: 1.4rem;
      font-weight: 900;
      line-height: 23px;
      text-align: left;
@@ -50,17 +48,17 @@ body {
 .container .informacoes .paragrafo {
      max-width: 278.25px;
      height: 54px;
-     font-size: 15px;
+     font-size: 100%;
      font-weight: 400;
-     width: 300px;
+    max-width: 300px;
      text-align: left;
 }
 
 .formulario {
      display: flex;
      flex-direction: column;
-     max-width: 350px;
-     height: 378px;
+     width: 57%;
+     height: 27.6rem;
      background-color: var(--bg-container-formulario);
      padding: 20px;
      border: 1px;
@@ -110,21 +108,24 @@ body {
      padding: 8px;
 }
 
-.formulario .span{
+.formulario .span {
      font-size: 8px;
      margin: 0 0 5;
      visibility: hidden;
 }
 
-.formulario .span.erro-validacao{
+.formulario .span.erro-validacao {
      color: var(--cor-erro-validacao);
      visibility: visible;
-     
+
 }
 
 .formulario .paragrafo-formulario {
-     font-size: 15px;
+     display: flex;
+     font-size: 12px;
      margin: 0 0 20px;
+     max-width: 90%;
+     
 }
 
 .formulario .btn {
@@ -132,7 +133,7 @@ body {
      justify-content: center;
      align-items: center;
      font-size: 15px;
-     width: 298px;
+     width: 100%;
      height: 41px;
      background-color: var(--bg-botao-formulario);
      border-radius: 5px;
@@ -141,8 +142,8 @@ body {
 
 }
 
-.formulario .btn:hover{
-      transition: .3s ease-in-out;
-     background-color: var( --bg-botao-hover);
+.formulario .btn:hover {
+     transition: .3s ease-in-out;
+     background-color: var(--bg-botao-hover);
 
 }

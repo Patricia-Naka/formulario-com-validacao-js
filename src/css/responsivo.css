@@ -1,23 +1,37 @@
-@media screen and (max-width: 530px) {
-     .container{
-          max-width: 100%;
-          height: 100vh;
-     }
-     .container .informacoes .titulo  {
-          max-width:100%;
-          font-size: 1rem;
-          
-
-     }
-     .informacoes .paragrafo{
-          margin-top: 60px;
-          font-size: 1%;
-     }
-     .formulario {
-          max-height: 90%;
-     }
-     .formulario .paragrafo-formulario {
+@media screen and (max-width: 768px) { 
+     .container {
           display: flex;
           flex-direction: column;
-          }
+          align-items: center;
+          justify-content: center;
+     }
+
+     .informacoes {
+          text-align: center;          justify-content: center;
+     }
+
+     .container.informacoes.titulo {
+          margin-top: 45px;
+     }
+
+     .formulario {
+          margin-top: 30px;
+     }    
+}
+
+@media screen and (max-width: 425px) {
+
+     .informacoes .titulo{
+          margin-bottom: 40px;
+     }
+    
+     .formulario{
+          margin-top: 50px;
+     }
+}
+
+@media screen and (max-width: 320px) {
+     .formulario{
+          margin-top: 85px;
+     }
 }

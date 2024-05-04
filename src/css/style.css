@@ -27,38 +27,30 @@ body {
 .container .informacoes {
      display: flex;
      flex-direction: column;
-     margin: 0 50px 0 0;
-     width: 50%;
-     height: 50%;
      color: var(--cor-da-fonte);
 }
 
 .container .informacoes .titulo   {
      display: flex;
      padding-bottom: 60px;
-     width: 287.25px;
+     max-width: 287px;
      font-size: 1.4rem;
      font-weight: 900;
      line-height: 23px;
-     text-align: left;
      height: 46px;
 
 }
 
 .container .informacoes .paragrafo {
-     max-width: 278.25px;
      height: 54px;
      font-size: 100%;
      font-weight: 400;
     max-width: 300px;
-     text-align: left;
 }
 
 .formulario {
      display: flex;
      flex-direction: column;
-     width: 57%;
-     height: 27.6rem;
      background-color: var(--bg-container-formulario);
      padding: 20px;
      border: 1px;
@@ -75,7 +67,7 @@ body {
      font-weight: 400;
 }
 
-.formulario .input {
+.formulario .campo {
      padding: 5px;
      font-size: 15px;
      margin-top: 10px;
@@ -83,7 +75,7 @@ body {
 }
 
 
-.formulario .input .btn {
+.formulario .campo .btn {
      width: 298px;
      height: 35.1px;
      border-radius: 6px;
@@ -91,11 +83,11 @@ body {
 }
 
 
-.formulario .input.erro-validacao {
+.formulario .campo.erro {
      border: 2px solid var(--borda-campo-vazio);
 }
 
-.formulario .input.campo-preenchido {
+.formulario .campo.valido {
      border: 2px solid var(--borda-campo-preenchido);
 
 }
@@ -114,7 +106,7 @@ body {
      visibility: hidden;
 }
 
-.formulario .span.erro-validacao {
+.formulario .span.erro {
      color: var(--cor-erro-validacao);
      visibility: visible;
 
@@ -141,6 +133,7 @@ body {
      cursor: pointer;
 
 }
+
 
 .formulario .btn:hover {
      transition: .3s ease-in-out;
